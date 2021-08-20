@@ -1,7 +1,7 @@
 # Digital Agency Capstone Project
  An old project design and developed after attending the workshop on "UI/UX Design and PSD to HTML Coversion".
 
-Preview on [**digital**agency](https://hasnainrsyed.github.io/digitalagency/)
+Preview on [**digital**agency](https://hasnainrsyed.github.io/digitalagency-capstone-project/)
 
 **File Structure**
 
