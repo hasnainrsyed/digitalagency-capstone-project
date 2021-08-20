@@ -1,0 +1,52 @@
+.feature-img {
+    background-color: $primary-alt-1;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    z-index: 120;
+
+    &-cover {
+        background-color: $primary-alt-1;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        padding-top: 66.6666667%;
+        filter: grayscale(100%);
+
+        &.image {
+            padding-top: 285px !important;
+        }
+
+        &:hover {
+            filter: grayscale(0)!important;
+        }
+    }
+
+    &-details {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 1.5rem;
+
+        & .h6, p {
+            color: $primary-alt-2;
+        }
+    }
+}
+
+
+//Clients
+@media ( max-width: 992px) {
+    .row.flex-column {
+        flex-direction: column-reverse;
+    }
+    .footer {
+        & .d-flex.row.flex-column, .h6 {
+            flex-direction: column!important;
+            text-align: center;
+        }
+    }
+}

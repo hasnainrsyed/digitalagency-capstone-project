@@ -1,0 +1,51 @@
+.footer {
+    padding: 3rem 0rem 0rem 0rem;
+    background: $primary-alt-1;
+
+    & .card {
+        margin-bottom: 4rem!important;
+        padding: 0 1rem 0 1rem;
+    }
+
+    @media (max-width: 576px) {
+        & .d-flex.row.flex-column, .h6 {
+            flex-direction: column!important;
+            text-align: center;
+        }
+    } 
+
+    & ul {
+        list-style: none;
+
+        & li {
+            margin-bottom: 0.25rem;
+            display: flex;
+
+            & div {
+                margin-left: 0.5rem;
+            }
+        }
+    }
+
+    & .icon {
+        font-size: 1.5rem;
+        margin-right: 0.25rem;
+    }
+
+    .form {
+        &-control {
+            display: block;
+            width: 100%;
+            height: calc(1.5em + .875rem + 2px);
+            padding: .4375rem .75rem;
+            font-size: initial;
+            font-weight: 400;
+            line-height: initial;
+            color: $primary-color-3;
+            background-color: $primary-alt-1;
+            border: 1px solid $primary-color-3;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            margin-bottom: 0.3125rem;
+        }
+    }
+}

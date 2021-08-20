@@ -1,0 +1,120 @@
+header {
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 11111;
+    background-color: white;
+
+    &.nav-up {
+        top: -4rem;
+    }
+}
+
+nav {
+    z-index: 100;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    & .brand-logo {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+
+        &:hover, .navbar-brand:focus {
+            text-decoration: none;
+        }
+    }
+
+    & .menu-btn i {
+        color: $primary-color-3;
+        font-size: 1rem;
+        cursor: pointer;
+        display: none;
+    }
+
+    & ul {
+        display: flex;
+        list-style: none;
+        margin-bottom: 0!important;
+        justify-content: center;
+        align-items: center;
+
+        & li {
+            margin: 0 0.75rem !important;
+        }
+
+        & a {
+            color: $primary-color-3;
+            text-decoration: none;
+        }
+    }
+
+    & #click {
+        display: none;
+    }
+}
+
+
+@media (max-width: 940px) {
+    header {
+        background-color: $primary-color-3;
+        // width: 100%;
+        // position: fixed;
+        // z-index: 111;
+        // top: 0;
+
+    }
+
+    nav {
+        & .brand-logo {
+            color: white;
+        }
+        & .menu-btn i {
+            color: white;
+            display: block;
+        }
+
+        & ul {
+            background-color: lighten( $primary-color-3, 1%);
+            border-top: 1px solid $accent-color;
+            position: absolute;
+            // position: fixed;
+            // z-index: 11;
+            top: 4rem;
+            right: -100%;
+            height: 100vh;
+            width: 100%;
+            display: block;
+            text-align: center;
+            @include transition;
+
+            & li {
+                margin: 1rem 0!important;
+                & a {
+                    font-size: 1.25rem;
+                    color: white;
+
+                    &:hover {
+                        color: $accent-color;
+                    }
+                }
+            }
+        }
+
+        & #click:checked ~ ul {
+            right: 0%;
+            @include transition;
+        }
+
+        & #click:checked ~ .menu-btn i:before {
+            content: '\f00d';
+        }
+    }
+}

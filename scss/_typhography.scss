@@ -1,0 +1,101 @@
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    font-family: inherit;
+    line-height: 1.1;
+    color: #212529;
+}
+
+.h1, h1 {
+    font-size: 4rem;
+}
+
+.h2, h2 {
+    font-size: 3rem;
+}
+
+.h3, h3 {
+    font-size: 1.75rem;
+}
+
+.h4, h4 {
+    font-size: 1.5rem;
+}
+
+.h5, h5 {
+    font-size: 1.25rem;
+}
+
+.h6, h6 {
+    font-size: 1rem;
+    margin-top: -0.25rem;
+}
+
+.bold {
+    font-weight: 800!important;
+}
+
+a {
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    
+    &:hover, .card-link {
+        color: $accent-color;
+
+    }
+
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.lead {
+    font-size: 1.25rem;
+}
+
+.uppercase {
+    text-transform: uppercase!important;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+[tabindex="-1"]:focus:not(:focus-visible) {
+    outline: 0!important;
+}
+
+.letter-spacing {
+    letter-spacing: -0.15rem;
+}
+
+.letter-spacing-normal {
+    letter-spacing: -0.075rem;
+}
+
+.line-height {
+    line-height: 1!important;
+}
+
+//Alignment
+.text-center {
+    text-align: center!important;
+}
+
+.text-left {
+    text-align: left!important;
+}
+
+.text-justify {
+    text-align: justify!important;
+}
+
+.text-muted {
+    color: #6c757d!important;
+}
